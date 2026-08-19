@@ -17,56 +17,56 @@ export default function OurProcess() {
       id: 1,
       step: "01",
       title: "Brief & Objective",
-      description: "We discuss campaign goals, target passengers, and brand budget.",
+      description: "We define campaign goals, audience priorities and investment parameters with absolute clarity.",
       icon: <FaClipboardList className="h-5 w-5 text-white" />,
     },
     {
       id: 2,
       step: "02",
       title: "Research & Plan",
-      description: "We select terminals and media formats matching demographics.",
+      description: "We identify the right terminals, formats and passenger environments for maximum relevance.",
       icon: <FaMagnifyingGlass className="h-5 w-5 text-white" />,
     },
     {
       id: 3,
       step: "03",
       title: "Authority Clearance",
-      description: "We secure slot bookings and content clearances from airport authorities.",
+      description: "We secure media availability, bookings and mandatory approvals with airport authorities.",
       icon: <FaBuilding className="h-5 w-5 text-white" />,
     },
     {
       id: 4,
       step: "04",
       title: "Creative & Layout",
-      description: "We resize and check resolution of high-impact creative files.",
+      description: "We adapt every creative to exact specifications for clarity, scale and visual impact.",
       icon: <FaPenNib className="h-5 w-5 text-white" />,
     },
     {
       id: 5,
       step: "05",
-      title: "HD Production",
-      description: "We produce graphics on premium backlit fabrics and vinyls.",
+      title: "Premium Production",
+      description: "We produce campaign assets using refined materials and high-resolution finishing standards.",
       icon: <FaPrint className="h-5 w-5 text-white" />,
     },
     {
       id: 6,
       step: "06",
-      title: "Night Mounting",
-      description: "Our mounting crew installs media during non-operational hours.",
+      title: "Precision Installation",
+      description: "Our specialist teams execute installations during approved windows with seamless coordination.",
       icon: <FaWrench className="h-5 w-5 text-white" />,
     },
     {
       id: 7,
       step: "07",
       title: "Campaign Live",
-      description: "Displays go live capturing high-dwell flyer impressions.",
+      description: "Your media goes live across selected touchpoints, delivering sustained premium audience visibility.",
       icon: <FaBullhorn className="h-5 w-5 text-white" />,
     },
     {
       id: 8,
       step: "08",
-      title: "Loop Reports",
-      description: "We share weekly proof photos and terminal traffic audits.",
+      title: "Verified Reporting",
+      description: "We provide photographic proof, execution updates and structured campaign performance reports.",
       icon: <FaChartBar className="h-5 w-5 text-white" />,
     },
   ];
@@ -84,7 +84,7 @@ export default function OurProcess() {
             Campaign Planning and Execution Process
           </h2>
           <p className="mt-4 text-base text-slate-500 font-medium">
-            Our proven 8-step process ensures seamless execution and measurable results.
+            A refined 8-step framework designed for precise coordination, seamless delivery and consistently elevated execution.
           </p>
         </div>
 

@@ -73,8 +73,8 @@ export default function InventorySnapshot() {
     },
   ];
 
-  const primaryImage = "https://images.unsplash.com/photo-1569003339405-ea396a5a8a90?q=80&w=800&auto=format&fit=crop";
-  const fallbackImage = "https://images.unsplash.com/photo-1569003339405-ea396a5a8a90?q=80&w=800&auto=format&fit=crop";
+  const primaryImage = "/cover/Live bookings. Concession clearances guaranteed..webp";
+  const fallbackImage = "/cover/Live bookings. Concession clearances guaranteed..webp";
 
   return (
     <section className="py-16 md:py-20 bg-white">

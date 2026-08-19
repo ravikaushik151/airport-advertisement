@@ -8,10 +8,10 @@ export default function WhatIsAirportAdvertising() {
   const [imageError, setImageError] = useState(false);
 
   const bulletPoints = [
-    "Target premium HNIs & frequent business travelers",
-    "High dwell time of 60 to 90 minutes post-security",
-    "Premium, clean, and uncluttered advertising environment",
-    "Build deep brand prestige and authority",
+    "Engage affluent travellers and influential decision-makers",
+    "Benefit from extended dwell time across the passenger journey",
+    "Command attention within refined, uncluttered environments",
+    "Elevate brand stature, recognition and long-term recall",
   ];
 
   const badges = [
@@ -24,19 +24,19 @@ export default function WhatIsAirportAdvertising() {
     {
       id: 2,
       icon: <FaGlobe className="h-6 w-6 text-orange-500" />,
-      title: "Corporate",
-      subtitle: "Decision Makers",
+      title: "Influential",
+      subtitle: "Decision-Makers",
     },
     {
       id: 3,
       icon: <FaChartLine className="h-6 w-6 text-orange-500" />,
-      title: "High Recall",
-      subtitle: "Conversions",
+      title: "Enduring",
+      subtitle: "Brand Recall",
     },
   ];
 
-  const primaryImage = "https://images.unsplash.com/photo-1540962351504-03099e0a754b?q=80&w=1000&auto=format&fit=crop";
-  const fallbackImage = "https://images.unsplash.com/photo-1540962351504-03099e0a754b?q=80&w=1000&auto=format&fit=crop";
+  const primaryImage = "/cover/Premium Reach. High-Impact Prestige.webp";
+  const fallbackImage = "/cover/Premium Reach. High-Impact Prestige.webp";
 
   return (
     <section className="py-16 md:py-24 bg-white overflow-hidden">
@@ -46,13 +46,13 @@ export default function WhatIsAirportAdvertising() {
           {/* Left Column: Context & Bullet Points */}
           <div className="lg:col-span-5 flex flex-col text-left">
             <span className="text-sm font-extrabold uppercase tracking-widest text-orange-500">
-              WHAT IS AIRPORT ADVERTISING?
+              THE VALUE OF AIRPORT ADVERTISING
             </span>
             <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl leading-tight font-serif">
-              Premium Reach. High-Impact Prestige.
+              Exceptional Audiences. Elevated Brand Presence.
             </h2>
             <p className="mt-6 text-base text-slate-600 leading-relaxed font-medium">
-              Airport advertising is one of the most powerful and prestigious transit marketing channels today. It allows brands to connect directly with highly affluent, receptive consumers in a captive environment during their passenger journey.
+              Airport advertising places brands within one of the most distinguished media environments - engaging affluent travellers, business leaders and high-value audiences during moments of extended attention.
             </p>
 
             {/* Checklist */}
@@ -72,10 +72,10 @@ export default function WhatIsAirportAdvertising() {
             {/* CTA Button */}
             <div className="mt-10">
               <Link
-                href="/about"
+                href="#formats"
                 className="inline-flex items-center justify-center rounded-lg bg-orange-500 px-8 py-3.5 text-sm font-bold text-white shadow-md hover:bg-orange-600 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0 active:shadow-md"
               >
-                Know More
+                Explore Airport Advertising
               </Link>
             </div>
           </div>

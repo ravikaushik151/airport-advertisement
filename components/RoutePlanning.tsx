@@ -18,31 +18,31 @@ export default function RoutePlanning() {
       id: 1,
       icon: <FaBullseye className="h-6 w-6 text-slate-800" />,
       title: "Audience Profiling",
-      description: "We define campaign objectives and profile your ideal target passenger.",
+      description: "We define campaign objectives and identify the traveller profiles most aligned with your brand.",
     },
     {
       id: 2,
       icon: <FaUsers className="h-6 w-6 text-slate-800" />,
       title: "Terminal Selection",
-      description: "We select terminals and gate corridors matching target flyer brackets.",
+      description: "We select terminals and passenger corridors that best match your audience and campaign intent.",
     },
     {
       id: 3,
       icon: <FaMapPin className="h-6 w-6 text-slate-800" />,
       title: "Media Planning",
-      description: "We design a custom mix of video walls, fabric lightboxes, and trolley ads.",
+      description: "We curate the ideal mix of formats to balance visibility, frequency and brand impact.",
     },
     {
       id: 4,
       icon: <FaBus className="h-6 w-6 text-slate-800" />,
       title: "Authority Clearances",
-      description: "We coordinate dates, loops, and content clearances directly with airport authorities.",
+      description: "We coordinate approvals, scheduling and compliance requirements directly with the relevant airport authorities.",
     },
     {
       id: 5,
       icon: <FaCalendarDays className="h-6 w-6 text-slate-800" />,
       title: "Verification Reports",
-      description: "We track campaign loops and share weekly proof-of-work reports.",
+      description: "We monitor live execution and provide documented campaign proof with clear, consistent reporting.",
     },
   ];
 
@@ -56,7 +56,7 @@ export default function RoutePlanning() {
         {/* Section Header */}
         <div className="text-left mb-12">
           <span className="text-sm font-extrabold uppercase tracking-widest text-orange-500">
-            AIRPORT TARGETING & PLAN
+            AIRPORT TARGETING & PLANNING
           </span>
           <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl leading-tight font-serif">
             How Airport Campaign Planning Works

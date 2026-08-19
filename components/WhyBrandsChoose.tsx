@@ -17,37 +17,37 @@ export default function WhyBrandsChoose() {
     {
       id: 1,
       icon: <FaUsers className="h-6 w-6 text-orange-500" />,
-      title: "HNI & Decision Maker Focus",
-      description: "Reach corporate executives, affluent business owners, and high-net-worth travelers.",
+      title: "HNI & Decision-Maker Access",
+      description: "Reach affluent travellers, business leaders and high-value decision-makers within a premium environment.",
     },
     {
       id: 2,
       icon: <FaLightbulb className="h-6 w-6 text-orange-500" />,
-      title: "Premium Brand Recall",
-      description: "Captive environments and long dwell times ensure high message absorption rates.",
+      title: "Elevated Brand Recall",
+      description: "Extended dwell time and captive attention create stronger visibility, recognition and lasting brand memory.",
     },
     {
       id: 3,
       icon: <FaTags className="h-6 w-6 text-orange-500" />,
-      title: "Unmatched Prestige",
-      description: "Elevate your brand's authority by placing ads in national and international airport zones.",
+      title: "Unrivalled Prestige",
+      description: "Position your brand within distinguished airport environments that naturally elevate perception and authority.",
     },
     {
       id: 4,
       icon: <FaMap className="h-6 w-6 text-orange-500" />,
-      title: "Nationwide Hub Scale",
-      description: "Scale your campaigns seamlessly across all major airport terminals in key cities.",
+      title: "Nationwide Airport Presence",
+      description: "Scale campaigns across leading airport hubs while maintaining a consistent and refined brand presence.",
     },
     {
       id: 5,
       icon: <FaClock className="h-6 w-6 text-orange-500" />,
       title: "Receptive Dwell Mindset",
-      description: "Engage passengers post-security when they have ample time and are highly relaxed.",
+      description: "Engage passengers during extended moments of waiting, movement and discovery when attention is naturally higher.",
     },
   ];
 
-  const primaryImage = "https://images.unsplash.com/photo-1540962351504-03099e0a754b?q=80&w=800&auto=format&fit=crop";
-  const fallbackImage = "https://images.unsplash.com/photo-1540962351504-03099e0a754b?q=80&w=800&auto=format&fit=crop";
+  const primaryImage = "/cover/Why Choose Airport Advertising.webp";
+  const fallbackImage = "/cover/Why Choose Airport Advertising.webp";
 
   return (
     <section className="py-16 md:py-24 bg-white overflow-hidden">

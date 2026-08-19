@@ -26,8 +26,8 @@ export default function Blog() {
       readTime: "4 min read",
       title: "Why Airport Advertising is the Ultimate Premium Transit Channel",
       excerpt: "Explore high-prestige demographics, captive dwell times, and high brand recall ratios that put airport terminal advertising at the top of transit media.",
-      localImage: "https://images.unsplash.com/photo-1540962351504-03099e0a754b?q=80&w=600&auto=format&fit=crop",
-      fallbackImage: "https://images.unsplash.com/photo-1540962351504-03099e0a754b?q=80&w=600&auto=format&fit=crop",
+      localImage: "/Insights & perspectives/why airport.webp",
+      fallbackImage: "/Insights & perspectives/why airport.webp",
       href: "/blog/why-airport-advertising",
     },
     {
@@ -37,8 +37,8 @@ export default function Blog() {
       readTime: "6 min read",
       title: "How to Optimize Media Campaigns at Major Aviation Hubs",
       excerpt: "From security queue dwell times and terminal regulations to choosing between domestic and international wings, here is your optimization guide.",
-      localImage: "https://images.unsplash.com/photo-1569003339405-ea396a5a8a90?q=80&w=600&auto=format&fit=crop",
-      fallbackImage: "https://images.unsplash.com/photo-1569003339405-ea396a5a8a90?q=80&w=600&auto=format&fit=crop",
+      localImage: "/Insights & perspectives/How to optimise.webp",
+      fallbackImage: "/Insights & perspectives/How to optimise.webp",
       href: "/blog/airport-campaign-guide",
     },
     {
@@ -48,8 +48,8 @@ export default function Blog() {
       readTime: "5 min read",
       title: "Maximizing Brand Authority with High-Impact Aerobridge Wraps",
       excerpt: "Understand how exclusive terminal walkways, luggage trolleys, and backlit fabric displays capture traveler views and build unmatched brand prestige.",
-      localImage: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=600&auto=format&fit=crop",
-      fallbackImage: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=600&auto=format&fit=crop",
+      localImage: "/Insights & perspectives/maximize the brand.webp",
+      fallbackImage: "/Insights & perspectives/maximize the brand.webp",
       href: "/blog/aerobridge-branding-benefits",
     },
   ];

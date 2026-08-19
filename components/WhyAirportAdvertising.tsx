@@ -37,12 +37,12 @@ export default function WhyAirportAdvertising({
 
             {/* Main title */}
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-[1.15] font-serif tracking-tight">
-              Specialist depth.<br />{cityName ? `Campaign capability in ${cityName}` : "Agency-wide capability"}.
+              Specialist Expertise.<br />{cityName ? `Campaign Capability in ${cityName}` : "Agency-wide Capability"}.
             </h2>
 
             {/* Description Paragraph */}
             <p className="text-sm sm:text-base text-slate-300 font-medium leading-relaxed font-sans mt-6 mb-10 max-w-xl">
-              Our dedicated transit team handles flight traffic research, slot permissions, custom print production, nighttime mounting logistics, structural inspections, and detailed post-campaign performance reporting.
+              Our dedicated airport media team brings together audience intelligence, authority coordination, premium production, precision installation and post-campaign reporting - ensuring every campaign is executed with consistency, control and absolute attention to detail.
             </p>
 
             {/* 2x2 Feature Grid block */}

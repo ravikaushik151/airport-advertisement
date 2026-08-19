@@ -32,8 +32,8 @@ export default function FeaturedCaseStudies() {
         { label: "Reach", value: "2.1M+ Passengers Engaged" },
         { label: "Outcome", value: "35% Increase in Card Approvals" },
       ],
-      localImage: "https://images.unsplash.com/photo-1540962351504-03099e0a754b?q=80&w=600&auto=format&fit=crop",
-      fallbackImage: "https://images.unsplash.com/photo-1540962351504-03099e0a754b?q=80&w=600&auto=format&fit=crop",
+      localImage: "/Featured Case Studies/Premium Fintech Card Launch.webp",
+      fallbackImage: "/Featured Case Studies/Premium Fintech Card Launch.webp",
       slug: "fintech-card-kia",
     },
     {
@@ -46,8 +46,8 @@ export default function FeaturedCaseStudies() {
         { label: "Reach", value: "3.5M+ Passengers Covered" },
         { label: "Outcome", value: "120+ Qualified Unit Enquiries" },
       ],
-      localImage: "https://images.unsplash.com/photo-1569003339405-ea396a5a8a90?q=80&w=600&auto=format&fit=crop",
-      fallbackImage: "https://images.unsplash.com/photo-1569003339405-ea396a5a8a90?q=80&w=600&auto=format&fit=crop",
+      localImage: "/Featured Case Studies/Luxury Real Estate Launch.webp",
+      fallbackImage: "/Featured Case Studies/Luxury Real Estate Launch.webp",
       slug: "luxury-property-csmia",
     },
     {

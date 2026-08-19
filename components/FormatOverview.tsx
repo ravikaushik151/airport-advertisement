@@ -29,38 +29,38 @@ export default function FormatOverview({
       title: "Tension Fabric Lightboxes",
       description: "Large-format backlit displays positioned at key high-traffic transit areas including check-in halls, security gates, and central concourses.",
       bestSuited: "Brand authority, luxury goods, premium real estate",
-      localImage: "https://images.unsplash.com/photo-1540962351504-03099e0a754b?q=80&w=600&auto=format&fit=crop",
-      fallbackImage: "https://images.unsplash.com/photo-1540962351504-03099e0a754b?q=80&w=600&auto=format&fit=crop",
+      localImage: "/Choose the touchpoint/Tension Fabric Lightboxes.webp",
+      fallbackImage: "/Choose the touchpoint/Tension Fabric Lightboxes.webp",
     },
     {
       id: 2,
       numberStr: "02",
-      tag: "DYNAMIC • ULTRA PREMIUM",
+      tag: "Dynamic Expression · Immersive Impact",
       title: "Digital LED Video Walls",
-      description: "Stunning, high-definition digital display networks and giant video walls running programmatic rich media and video campaigns.",
-      bestSuited: "App launches, dynamic pricing, creative storytelling",
-      localImage: "https://images.unsplash.com/photo-1569003339405-ea396a5a8a90?q=80&w=600&auto=format&fit=crop",
-      fallbackImage: "https://images.unsplash.com/photo-1569003339405-ea396a5a8a90?q=80&w=600&auto=format&fit=crop",
+      description: "High-definition digital canvases that bring motion, storytelling and scale together across high-traffic terminal environments.",
+      bestSuited: "Product launches, technology, dynamic campaigns",
+      localImage: "/Choose the touchpoint/Digital LED Video Walls.webp",
+      fallbackImage: "/Choose the touchpoint/Digital LED Video Walls.webp",
     },
     {
       id: 3,
       numberStr: "03",
-      tag: "MOBILE REPETITION • DIRECT TOUCH",
-      title: "Luggage Trolley Ads",
-      description: "High-frequency advertisement panels attached directly to airport luggage trolleys, accompanying passengers throughout their entire journey.",
-      bestSuited: "Mass premium products, banks, telecom services",
-      localImage: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=600&auto=format&fit=crop",
-      fallbackImage: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=600&auto=format&fit=crop",
+      tag: "Mobile Visibility · Repeated Brand Exposure",
+      title: "Luggage Trolley Advertising",
+      description: "Strategically branded trolley panels that travel with passengers, creating continuous visibility throughout key moments of the airport journey.",
+      bestSuited: "Banking, telecom, consumer brands, mass-premium campaigns",
+      localImage: "/Choose the touchpoint/Luggage Trolley Ads.webp",
+      fallbackImage: "/Choose the touchpoint/Luggage Trolley Ads.webp",
     },
     {
       id: 4,
       numberStr: "04",
-      tag: "EXCLUSIVE PATHWAY • 100% RECALL",
+      tag: "Exclusive Placement · Uninterrupted Attention",
       title: "Aerobridge Branding",
-      description: "Exclusive wrap advertisements along the interior pathways or exterior walls of aerobridges, capturing departing and arriving travelers.",
-      bestSuited: "High-value B2B services, FinTech, premium consumer goods",
-      localImage: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=600&auto=format&fit=crop",
-      fallbackImage: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=600&auto=format&fit=crop",
+      description: "Immersive branding across aerobridge pathways, offering brands a distinctive presence within one of the airport’s most exclusive passenger touchpoints.",
+      bestSuited: "FinTech, premium services, luxury and high-value brands",
+      localImage: "/Choose the touchpoint/Aerobridge Branding.webp",
+      fallbackImage: "/Choose the touchpoint/Aerobridge Branding.webp",
     },
   ];
 
@@ -152,7 +152,7 @@ export default function FormatOverview({
                   {/* View format link */}
                   <div className="flex items-center justify-between mt-6 pt-4 border-t border-gray-100 group-hover:border-white/10 transition-colors duration-300">
                     <span className="text-[12px] font-bold text-slate-900 group-hover:text-white font-sans transition-colors duration-300">
-                      View media specs
+                      Explore Media Specifications
                     </span>
                     <span className="text-xs text-orange-500 font-bold group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300">
                       ↗

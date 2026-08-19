@@ -28,8 +28,8 @@ export default function Hero({
             <span className="h-2 w-2 rounded-full bg-[#f15a24]"></span>
             <span className="text-[11px] font-bold tracking-[0.18em] text-slate-400 uppercase font-sans">
               {cityName
-                ? `${cityName.toUpperCase()}'S AIRPORT ADVERTISING DESK`
-                : "INDIA'S AIRPORT ADVERTISING DESK"}
+                ? `${cityName.toUpperCase()}'S PREMIER AIRPORT ADVERTISING DESK`
+                : "INDIA'S PREMIER AIRPORT ADVERTISING DESK"}
             </span>
           </div>
 
@@ -39,14 +39,14 @@ export default function Hero({
               cityName ? (
                 <>
                   Airport branding in<br />
-                  {cityName}, planned with<br />
-                  <span className="font-serif italic text-[#f15a24] font-normal font-serif">precision.</span>
+                  {cityName}, curated for<br />
+                  <span className="font-serif italic text-[#f15a24] font-normal font-serif">influence.</span>
                 </>
               ) : (
                 <>
-                  Airport branding,<br />
-                  planned with<br />
-                  <span className="font-serif italic text-[#f15a24] font-normal font-serif">precision.</span>
+                  Airport Advertising,<br />
+                  curated for<br />
+                  <span className="font-serif italic text-[#f15a24] font-normal font-serif">influence.</span>
                 </>
               )
             )}
@@ -54,7 +54,7 @@ export default function Hero({
 
           {/* Descriptive Subtext */}
           <p className="text-[15px] sm:text-base text-slate-300/90 font-medium leading-relaxed max-w-xl mb-10 font-sans">
-            {subtitle || `Connect directly with premium travelers, business executives, and decision-makers at major airports across ${cityName || "India"} through high-dwell fabric lightboxes, digital video walls, and custom terminal branding.`}
+            {subtitle || (cityName ? `Engage premium travellers, business leaders and high-value audiences across ${cityName}'s leading airports through distinguished media placements, immersive digital formats and precision-led terminal branding.` : "Engage premium travellers, business leaders and high-value audiences across India’s leading airports through distinguished media placements, immersive digital formats and precision-led terminal branding.")}
           </p>
 
           {/* Call-to-actions */}
@@ -63,13 +63,13 @@ export default function Hero({
               href="/#contact-form"
               className="inline-flex items-center justify-center rounded bg-[#f15a24] hover:bg-[#e04f1a] px-6 py-4 text-[15px] font-bold text-white shadow-lg shadow-orange-500/10 transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0"
             >
-              Get an advertising proposal <span className="ml-2 font-sans font-normal text-xs">↗</span>
+              Get a Bespoke Campaign Plan <span className="ml-2 font-sans font-normal text-xs">↗</span>
             </Link>
             <Link
               href="#formats"
               className="inline-flex items-center justify-center gap-2 text-[15px] font-semibold text-white hover:text-orange-500 transition-colors py-2"
             >
-              View media formats <span className="text-xs text-slate-400">↓</span>
+              Explore Media Formats <span className="text-xs text-slate-400">↓</span>
             </Link>
           </div>
 
@@ -77,7 +77,7 @@ export default function Hero({
           <div className="grid grid-cols-3 border-t border-white/10 pt-8 mt-auto w-full gap-4">
             <div className="border-r border-white/10 pr-3">
               <div className="text-base sm:text-lg font-bold text-white leading-tight">Since 2013</div>
-              <div className="text-[11px] text-slate-400 mt-1 leading-snug">Agency-led execution</div>
+              <div className="text-[11px] text-slate-400 mt-1 leading-snug">Proven Media Expertise</div>
             </div>
             <div className="border-r border-white/10 px-3">
               <div className="text-base sm:text-lg font-bold text-white leading-tight">12+ Airports</div>
@@ -85,7 +85,7 @@ export default function Hero({
             </div>
             <div className="pl-3">
               <div className="text-base sm:text-lg font-bold text-white leading-tight">100% Audited</div>
-              <div className="text-[11px] text-slate-400 mt-1 leading-snug">Go-live to completion</div>
+              <div className="text-[11px] text-slate-400 mt-1 leading-snug">Verified End-to-End Execution</div>
             </div>
           </div>
 
@@ -97,7 +97,7 @@ export default function Hero({
           {/* Dusk Background Image */}
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src={image || "https://images.unsplash.com/photo-1569003339405-ea396a5a8a90?q=80&w=2070&auto=format&fit=crop"}
+            src={image || "/cover/Airport branding.webp"}
             alt={`Premium Airport Advertising in ${cityName || "India"} planned with precision`}
             className="absolute inset-0 h-full w-full object-cover brightness-[0.6] contrast-[1.05]"
           />
