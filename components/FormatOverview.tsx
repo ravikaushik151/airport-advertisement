@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import { getCityData } from "@/app/locations/cityData";
 
 interface FormatItem {
   id: number;
@@ -16,10 +17,14 @@ interface FormatItem {
 
 export default function FormatOverview({
   cityName,
+  cityId,
 }: {
   cityName?: string;
+  cityId?: string;
 }) {
   const [imageErrors, setImageErrors] = useState<Record<number, boolean>>({});
+
+  const cityInfo = cityId ? getCityData(cityId) : null;
 
   const formats: FormatItem[] = [
     {
@@ -29,8 +34,8 @@ export default function FormatOverview({
       title: "Tension Fabric Lightboxes",
       description: "Large-format backlit displays positioned at key high-traffic transit areas including check-in halls, security gates, and central concourses.",
       bestSuited: "Brand authority, luxury goods, premium real estate",
-      localImage: "/Choose the touchpoint/Tension Fabric Lightboxes.webp",
-      fallbackImage: "/Choose the touchpoint/Tension Fabric Lightboxes.webp",
+      localImage: cityInfo?.formats?.lightbox || "/Choose the touchpoint/Tension Fabric Lightboxes.webp",
+      fallbackImage: cityInfo?.formats?.lightbox || "/Choose the touchpoint/Tension Fabric Lightboxes.webp",
     },
     {
       id: 2,
@@ -39,8 +44,8 @@ export default function FormatOverview({
       title: "Digital LED Video Walls",
       description: "High-definition digital canvases that bring motion, storytelling and scale together across high-traffic terminal environments.",
       bestSuited: "Product launches, technology, dynamic campaigns",
-      localImage: "/Choose the touchpoint/Digital LED Video Walls.webp",
-      fallbackImage: "/Choose the touchpoint/Digital LED Video Walls.webp",
+      localImage: cityInfo?.formats?.ledWall || "/Choose the touchpoint/Digital LED Video Walls.webp",
+      fallbackImage: cityInfo?.formats?.ledWall || "/Choose the touchpoint/Digital LED Video Walls.webp",
     },
     {
       id: 3,
@@ -49,8 +54,8 @@ export default function FormatOverview({
       title: "Luggage Trolley Advertising",
       description: "Strategically branded trolley panels that travel with passengers, creating continuous visibility throughout key moments of the airport journey.",
       bestSuited: "Banking, telecom, consumer brands, mass-premium campaigns",
-      localImage: "/Choose the touchpoint/Luggage Trolley Ads.webp",
-      fallbackImage: "/Choose the touchpoint/Luggage Trolley Ads.webp",
+      localImage: cityInfo?.formats?.trolley || "/Choose the touchpoint/Luggage Trolley Ads.webp",
+      fallbackImage: cityInfo?.formats?.trolley || "/Choose the touchpoint/Luggage Trolley Ads.webp",
     },
     {
       id: 4,
@@ -59,8 +64,8 @@ export default function FormatOverview({
       title: "Aerobridge Branding",
       description: "Immersive branding across aerobridge pathways, offering brands a distinctive presence within one of the airport’s most exclusive passenger touchpoints.",
       bestSuited: "FinTech, premium services, luxury and high-value brands",
-      localImage: "/Choose the touchpoint/Aerobridge Branding.webp",
-      fallbackImage: "/Choose the touchpoint/Aerobridge Branding.webp",
+      localImage: cityInfo?.formats?.aerobridge || "/Choose the touchpoint/Aerobridge Branding.webp",
+      fallbackImage: cityInfo?.formats?.aerobridge || "/Choose the touchpoint/Aerobridge Branding.webp",
     },
   ];
 

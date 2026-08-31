@@ -9,6 +9,12 @@ export interface CityInfo {
   aboutImage: string;
   aboutTitle: string;
   aboutDescription: string;
+  formats?: {
+    lightbox?: string;
+    ledWall?: string;
+    trolley?: string;
+    aerobridge?: string;
+  };
 }
 
 export const cityDatabase: Record<string, CityInfo> = {
@@ -19,10 +25,16 @@ export const cityDatabase: Record<string, CityInfo> = {
     activeBuses: "150+ Media Displays",
     impressions: "6.5M+ Monthly Passengers",
     routes: "T1 departures lobby, T2 arrivals hall, baggage reclaim carousel, premium lounges, boarding corridor",
-    heroImage: "https://images.unsplash.com/photo-1540962351504-03099e0a754b?q=80&w=2000&auto=format&fit=crop",
-    aboutImage: "https://images.unsplash.com/photo-1540962351504-03099e0a754b?q=80&w=2000&auto=format&fit=crop",
+    heroImage: "/city/Bangalore/cover.webp",
+    aboutImage: "/city/Bangalore/2.webp",
     aboutTitle: "Bengaluru's Premier Airport Advertising Partner",
     aboutDescription: "We specialize in premium advertising inside Kempegowda International Airport (KIA), helping brands connect directly with affluent business and leisure travelers through high-impact fabric lightboxes, digital LED screens, and baggage carousel wraps.",
+    formats: {
+      lightbox: "/city/Bangalore/fabric lightbox.webp",
+      ledWall: "/city/Bangalore/digital led wall.webp",
+      trolley: "/city/Bangalore/Luggage Trolley Advertising.webp",
+      aerobridge: "/city/Bangalore/Aerobridge Branding.webp",
+    },
   },
   mumbai: {
     id: "mumbai",
@@ -31,10 +43,16 @@ export const cityDatabase: Record<string, CityInfo> = {
     activeBuses: "220+ Media Displays",
     impressions: "8M+ Monthly Passengers",
     routes: "T2 departures VIP zone, domestic boarding gates, arrivals corridor, baggage claim lightboxes",
-    heroImage: "https://images.unsplash.com/photo-1569003339405-ea396a5a8a90?q=80&w=2000&auto=format&fit=crop",
-    aboutImage: "https://images.unsplash.com/photo-1540962351504-03099e0a754b?q=80&w=2000&auto=format&fit=crop",
+    heroImage: "/city/Mumbai/cover.webp",
+    aboutImage: "/city/Mumbai/2.webp",
     aboutTitle: "Mumbai's Premium Airport Branding Specialist",
     aboutDescription: "Maximize high-dwell brand impressions at CSMIA Terminal 2. We coordinate exclusive lightbox placements, digital video walls, and luggage trolley sponsorships to reach India's top business leaders and frequent flyers.",
+    formats: {
+      lightbox: "/city/Mumbai/fabric lightbox.webp",
+      ledWall: "/city/Mumbai/digital led wall.webp",
+      trolley: "/city/Mumbai/Luggage Trolley Advertising.webp",
+      aerobridge: "/city/Mumbai/aero branding.webp",
+    },
   },
   hyderabad: {
     id: "hyderabad",
@@ -43,10 +61,16 @@ export const cityDatabase: Record<string, CityInfo> = {
     activeBuses: "120+ Media Displays",
     impressions: "4.5M+ Monthly Passengers",
     routes: "Departures check-in hall, security hold area, aerobridge walks, arrivals exit columns",
-    heroImage: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=2000&auto=format&fit=crop",
-    aboutImage: "https://images.unsplash.com/photo-1490430657723-4d607c1503fc?q=80&w=2000&auto=format&fit=crop",
+    heroImage: "/city/Hydrebad/cover.webp",
+    aboutImage: "/city/Hydrebad/2.webp",
     aboutTitle: "Hyderabad's Leading Airport Campaign Desk",
     aboutDescription: "Connect directly with corporate leaders and tech professionals at Hyderabad RGIA. Our team manages end-to-end campaigns, from slot approvals to high-definition backlit fabric mounting.",
+    formats: {
+      lightbox: "/city/Hydrebad/fabric lightbox.webp",
+      ledWall: "/city/Hydrebad/digital led video.webp",
+      trolley: "/city/Hydrebad/Luggage Trolley Advertising.webp",
+      aerobridge: "/city/Hydrebad/aero bridge.webp",
+    },
   },
   chennai: {
     id: "chennai",
@@ -55,10 +79,16 @@ export const cityDatabase: Record<string, CityInfo> = {
     activeBuses: "100+ Media Displays",
     impressions: "4M+ Monthly Passengers",
     routes: "Domestic check-in lobby, international departures gates, baggage carousel walls, arrivals exit",
-    heroImage: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?q=80&w=2000&auto=format&fit=crop",
-    aboutImage: "https://images.unsplash.com/photo-1540962351504-03099e0a754b?q=80&w=2000&auto=format&fit=crop",
+    heroImage: "/city/chenai/cover.webp",
+    aboutImage: "/city/chenai/2.webp",
     aboutTitle: "Chennai's Strategic Airport Media Partner",
     aboutDescription: "High-impact transit media campaigns targeting South India's industrial and corporate hub. We secure prime digital screens and static lightbox spots at Chennai International Airport.",
+    formats: {
+      lightbox: "/city/chenai/fabric lightbox.webp",
+      ledWall: "/city/chenai/led light box.webp",
+      trolley: "/city/chenai/Luggage Trolley Advertising.webp",
+      aerobridge: "/city/chenai/aero bridge.webp",
+    },
   },
   kolkata: {
     id: "kolkata",
@@ -67,10 +97,16 @@ export const cityDatabase: Record<string, CityInfo> = {
     activeBuses: "80+ Media Displays",
     impressions: "3M+ Monthly Passengers",
     routes: "Departures hall, arrivals corridor, baggage claim area, aerobridge entrance gates",
-    heroImage: "https://images.unsplash.com/photo-1542296332-2e4473fac56f?q=80&w=2000&auto=format&fit=crop",
-    aboutImage: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=2000&auto=format&fit=crop",
+    heroImage: "/city/Kolkota/cover.webp",
+    aboutImage: "/city/Kolkota/2.webp",
     aboutTitle: "Kolkata's Airport Advertising Gateway",
     aboutDescription: "Engage premium cultural and corporate flyers at East India's primary aviation gateway. We manage slot licensing, digital display loops, and high-fidelity poster installations.",
+    formats: {
+      lightbox: "/city/Kolkota/fabric lightbox.webp",
+      ledWall: "/city/Kolkota/digital led video wall.webp",
+      trolley: "/city/Kolkota/Luggage Trolley Advertising.webp",
+      aerobridge: "/city/Kolkota/aero branding.webp",
+    },
   },
   kochi: {
     id: "kochi",
@@ -79,10 +115,16 @@ export const cityDatabase: Record<string, CityInfo> = {
     activeBuses: "90+ Media Displays",
     impressions: "2.5M+ Monthly Passengers",
     routes: "CIAL Terminal 3 departures check-in, international arrivals, duty-free exit area, passenger lounges",
-    heroImage: "https://images.unsplash.com/photo-1483450388369-9ed95738483c?q=80&w=2000&auto=format&fit=crop",
-    aboutImage: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=2000&auto=format&fit=crop",
+    heroImage: "/city/kochi/cover.webp",
+    aboutImage: "/city/kochi/2.webp",
     aboutTitle: "Kochi's Premium Airport Advertising Partner",
     aboutDescription: "Target high-spending NRI families and domestic travelers at Kochi International Airport (CIAL). We offer customized media layouts, digital LED loops, and luggage trolley panel branding.",
+    formats: {
+      lightbox: "/city/kochi/fabric lightbox.webp",
+      ledWall: "/city/kochi/digital led wall.webp",
+      trolley: "/city/kochi/Luggage Trolley Advertising.webp",
+      aerobridge: "/city/kochi/aero branding.webp",
+    },
   },
 };
 
@@ -107,8 +149,8 @@ export function getCityData(cityId: string): CityInfo {
     activeBuses: "80+ Media Spots",
     impressions: "3M+ Monthly Passengers",
     routes: `Departures, arrivals, and check-in lobby zones in ${capitalizedName} Airport`,
-    heroImage: "https://images.unsplash.com/photo-1540962351504-03099e0a754b?q=80&w=2000&auto=format&fit=crop",
-    aboutImage: "https://images.unsplash.com/photo-1540962351504-03099e0a754b?q=80&w=2000&auto=format&fit=crop",
+    heroImage: `/city/${capitalizedName}/cover.webp`,
+    aboutImage: `/city/${capitalizedName}/2.webp`,
     aboutTitle: `${capitalizedName}'s Premium Airport Media Partner`,
     aboutDescription: `We provide premium airport advertising BTL setups and high-dwell campaign displays in ${capitalizedName}. Launch interactive digital campaigns, brand check-in gates, and target frequent travelers.`,
   };

@@ -60,6 +60,7 @@ export default async function CityPage({ params }: PageProps) {
         {/* Dynamic RWA Format Overview */}
         <FormatOverview 
           cityName={cityInfo.name}
+          cityId={cityInfo.id}
         />
 
         {/* Dynamic Why Airport Advertising Section */}

@@ -72,7 +72,7 @@ export default function LocationsPage() {
       activeBuses: "150+ Displays",
       impressions: "6.5M+ Passengers",
       routes: "T1 departures, T2 check-in halls, baggage reclaim, premium lounges",
-      image: "https://images.unsplash.com/photo-1540962351504-03099e0a754b?q=80&w=600&auto=format&fit=crop",
+      image: "/city/Bangalore/cover.webp",
     },
     {
       id: "mumbai",
@@ -81,7 +81,7 @@ export default function LocationsPage() {
       activeBuses: "220+ Displays",
       impressions: "8M+ Passengers",
       routes: "T2 Departures lobby, arrivals exit corridor, boarding gate walls",
-      image: "https://images.unsplash.com/photo-1569003339405-ea396a5a8a90?q=80&w=600&auto=format&fit=crop",
+      image: "/city/Mumbai/cover.webp",
     },
     {
       id: "hyderabad",
@@ -90,7 +90,7 @@ export default function LocationsPage() {
       activeBuses: "120+ Displays",
       impressions: "4.5M+ Passengers",
       routes: "Departures check-in hall, security hold area, baggage carousel walks",
-      image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=600&auto=format&fit=crop",
+      image: "/city/Hydrebad/cover.webp",
     },
     {
       id: "chennai",
@@ -99,7 +99,7 @@ export default function LocationsPage() {
       activeBuses: "100+ Displays",
       impressions: "4M+ Passengers",
       routes: "Domestic check-in lobby, international departure gates, baggage claim walls",
-      image: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?q=80&w=600&auto=format&fit=crop",
+      image: "/city/chenai/cover.webp",
     },
     {
       id: "kolkata",
@@ -108,7 +108,7 @@ export default function LocationsPage() {
       activeBuses: "80+ Displays",
       impressions: "3M+ Passengers",
       routes: "Departures halls, central transit lounge, arrivals corridors",
-      image: "https://images.unsplash.com/photo-1542296332-2e4473fac56f?q=80&w=600&auto=format&fit=crop",
+      image: "/city/Kolkota/cover.webp",
     },
     {
       id: "kochi",
@@ -117,7 +117,7 @@ export default function LocationsPage() {
       activeBuses: "90+ Displays",
       impressions: "2.5M+ Passengers",
       routes: "T3 international departures, arrivals duty-free lobby, baggage carousel area",
-      image: "https://images.unsplash.com/photo-1483450388369-9ed95738483c?q=80&w=600&auto=format&fit=crop",
+      image: "/city/kochi/cover.webp",
     },
   ];
 

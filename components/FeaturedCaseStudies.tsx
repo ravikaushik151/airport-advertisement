@@ -60,8 +60,8 @@ export default function FeaturedCaseStudies() {
         { label: "Reach", value: "1.5M+ Domestic Flyers" },
         { label: "Outcome", value: "850+ SUV Test Drives Booked" },
       ],
-      localImage: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=600&auto=format&fit=crop",
-      fallbackImage: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=600&auto=format&fit=crop",
+      localImage: "/city/Hydrebad/digital led video.webp",
+      fallbackImage: "/city/Hydrebad/digital led video.webp",
       slug: "suv-launch-rgia",
     },
   ];
