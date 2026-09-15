@@ -46,6 +46,8 @@ export default async function CityPage({ params }: PageProps) {
         {/* Dynamic Hero Section */}
         <Hero 
           cityName={cityInfo.name} 
+          title={cityInfo.heroTitle}
+          subtitle={cityInfo.heroSubtitle}
           image={cityInfo.heroImage}
         />
 
@@ -55,9 +57,10 @@ export default async function CityPage({ params }: PageProps) {
           title={cityInfo.aboutTitle}
           description={cityInfo.aboutDescription}
           image={cityInfo.aboutImage}
+          features={cityInfo.features}
         />
 
-        {/* Dynamic RWA Format Overview */}
+        {/* Dynamic Format Overview */}
         <FormatOverview 
           cityName={cityInfo.name}
           cityId={cityInfo.id}
@@ -66,11 +69,14 @@ export default async function CityPage({ params }: PageProps) {
         {/* Dynamic Why Airport Advertising Section */}
         <WhyAirportAdvertising 
           cityName={cityInfo.name}
+          title={cityInfo.whyTitle}
+          description={cityInfo.whyDescription}
         />
 
         {/* Dynamic FAQs Section */}
         <NationalFAQs 
           cityName={cityInfo.name}
+          faqs={cityInfo.faqs}
         />
 
       </main>

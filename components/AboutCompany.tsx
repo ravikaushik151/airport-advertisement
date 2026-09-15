@@ -9,40 +9,62 @@ export default function AboutCompany({
   title,
   description,
   image,
+  features: customFeatures,
 }: {
   cityName?: string;
   title?: string;
   description?: string;
   image?: string;
+  features?: {
+    id: number;
+    title: string;
+    subtitle: string;
+  }[];
 }) {
   const [imageError, setImageError] = useState(false);
 
-  const features = [
+  const defaultIcons = [
+    <FaGlobe key="1" className="h-6 w-6 text-orange-500" />,
+    <FaAward key="2" className="h-6 w-6 text-orange-500" />,
+    <FaClock key="3" className="h-6 w-6 text-orange-500" />,
+    <FaUserCheck key="4" className="h-6 w-6 text-orange-500" />,
+  ];
+
+  const defaultFeatures = [
     {
       id: 1,
-      icon: <FaGlobe className="h-6 w-6 text-orange-500" />,
+      icon: defaultIcons[0],
       title: cityName ? "Local Reach" : "PAN India",
       subtitle: cityName ? "City Network" : "Presence",
     },
     {
       id: 2,
-      icon: <FaAward className="h-6 w-6 text-orange-500" />,
+      icon: defaultIcons[1],
       title: "Premium",
       subtitle: "Quality",
     },
     {
       id: 3,
-      icon: <FaClock className="h-6 w-6 text-orange-500" />,
+      icon: defaultIcons[2],
       title: "On-Time",
       subtitle: "Execution",
     },
     {
       id: 4,
-      icon: <FaUserCheck className="h-6 w-6 text-orange-500" />,
+      icon: defaultIcons[3],
       title: "Expert",
       subtitle: "Team",
     },
   ];
+
+  const features = customFeatures && customFeatures.length > 0
+    ? customFeatures.map((f, index) => ({
+        id: f.id || index + 1,
+        icon: defaultIcons[index % defaultIcons.length],
+        title: f.title,
+        subtitle: f.subtitle,
+      }))
+    : defaultFeatures;
 
   const primaryImage = image || "https://images.unsplash.com/photo-1490430657723-4d607c1503fc?q=80&w=2071&auto=format&fit=crop";
   const fallbackImage = "https://images.unsplash.com/photo-1490430657723-4d607c1503fc?q=80&w=2071&auto=format&fit=crop";

@@ -68,7 +68,7 @@ export default function LocationsPage() {
     {
       id: "bengaluru",
       name: "Bengaluru",
-      description: "Reach affluent business executives, tech leaders, and premium flyers at Kempegowda International Airport (KIA).",
+      description: "Reach affluent travellers, business leaders and high-value audiences through carefully selected airport media, immersive digital formats and strategically placed terminal branding.",
       activeBuses: "150+ Displays",
       impressions: "6.5M+ Passengers",
       routes: "T1 departures, T2 check-in halls, baggage reclaim, premium lounges",
@@ -77,7 +77,7 @@ export default function LocationsPage() {
     {
       id: "mumbai",
       name: "Mumbai",
-      description: "Target high-net-worth corporate leaders, Bollywood celebrities, and national travelers at CSMIA Terminal 2.",
+      description: "Engage premium travellers, business leaders and affluent audiences across Mumbai’s airport environment through distinguished media placements, immersive digital formats and strategically planned terminal branding.",
       activeBuses: "220+ Displays",
       impressions: "8M+ Passengers",
       routes: "T2 Departures lobby, arrivals exit corridor, boarding gate walls",
@@ -86,7 +86,7 @@ export default function LocationsPage() {
     {
       id: "hyderabad",
       name: "Hyderabad",
-      description: "Capture tech executives, global entrepreneurs, and pharma leaders traveling through RGIA.",
+      description: "Engage affluent travellers, business leaders and high-value audiences through premium airport media, immersive digital formats and strategically positioned terminal branding built for visibility and recall.",
       activeBuses: "120+ Displays",
       impressions: "4.5M+ Passengers",
       routes: "Departures check-in hall, security hold area, baggage carousel walks",
@@ -95,7 +95,7 @@ export default function LocationsPage() {
     {
       id: "chennai",
       name: "Chennai",
-      description: "Connect with senior corporate executives, manufacturing leaders, and international flyers at Chennai Airport.",
+      description: "Engage business travellers, affluent flyers and high-value audiences across Chennai Airport through premium media placements, immersive digital formats and strategically planned terminal branding.",
       activeBuses: "100+ Displays",
       impressions: "4M+ Passengers",
       routes: "Domestic check-in lobby, international departure gates, baggage claim walls",
@@ -104,7 +104,7 @@ export default function LocationsPage() {
     {
       id: "kolkata",
       name: "Kolkata",
-      description: "Engage cultural travelers, retail shoppers, and business professionals at Netaji Subhash Chandra Bose Airport.",
+      description: "Reach business travellers, affluent flyers and high-intent audiences at NSCBI Airport through premium terminal media, dynamic digital formats and strategically placed branding designed for strong visibility across one of eastern India’s key aviation hubs.",
       activeBuses: "80+ Displays",
       impressions: "3M+ Passengers",
       routes: "Departures halls, central transit lounge, arrivals corridors",
@@ -113,7 +113,7 @@ export default function LocationsPage() {
     {
       id: "kochi",
       name: "Kochi",
-      description: "Reach premium NRI families, leisure tourists, and international flyers at Cochin International Airport (CIAL).",
+      description: "Reach international travellers, NRI audiences, business flyers and premium consumers at Cochin International Airport through high-impact terminal media, digital formats and strategically positioned branding designed for lasting visibility.",
       activeBuses: "90+ Displays",
       impressions: "2.5M+ Passengers",
       routes: "T3 international departures, arrivals duty-free lobby, baggage carousel area",

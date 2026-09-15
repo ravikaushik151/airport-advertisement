@@ -4,8 +4,12 @@ import React from "react";
 
 export default function WhyAirportAdvertising({
   cityName,
+  title,
+  description,
 }: {
   cityName?: string;
+  title?: React.ReactNode;
+  description?: string;
 }) {
   return (
     <section className="py-24 bg-[#051527] text-white">
@@ -37,12 +41,16 @@ export default function WhyAirportAdvertising({
 
             {/* Main title */}
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-[1.15] font-serif tracking-tight">
-              Specialist Expertise.<br />{cityName ? `Campaign Capability in ${cityName}` : "Agency-wide Capability"}.
+              {title || (
+                <>Specialist Expertise.<br />{cityName ? `Campaign Capability in ${cityName}` : "Agency-wide Capability"}.</>
+              )}
             </h2>
 
             {/* Description Paragraph */}
             <p className="text-sm sm:text-base text-slate-300 font-medium leading-relaxed font-sans mt-6 mb-10 max-w-xl">
-              Our dedicated airport media team brings together audience intelligence, authority coordination, premium production, precision installation and post-campaign reporting - ensuring every campaign is executed with consistency, control and absolute attention to detail.
+              {description || (
+                "Our dedicated airport media team brings together audience intelligence, authority coordination, premium production, precision installation and post-campaign reporting - ensuring every campaign is executed with consistency, control and absolute attention to detail."
+              )}
             </p>
 
             {/* 2x2 Feature Grid block */}

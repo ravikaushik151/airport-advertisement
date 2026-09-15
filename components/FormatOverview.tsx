@@ -30,40 +30,40 @@ export default function FormatOverview({
     {
       id: 1,
       numberStr: "01",
-      tag: "HIGH IMPACT • ENTRY & TRANSIT",
+      tag: cityInfo?.formatDetails?.lightbox?.tagline || "HIGH IMPACT • ENTRY & TRANSIT",
       title: "Tension Fabric Lightboxes",
-      description: "Large-format backlit displays positioned at key high-traffic transit areas including check-in halls, security gates, and central concourses.",
-      bestSuited: "Brand authority, luxury goods, premium real estate",
+      description: cityInfo?.formatDetails?.lightbox?.description || "Large-format backlit displays positioned at key high-traffic transit areas including check-in halls, security gates, and central concourses.",
+      bestSuited: cityInfo?.formatDetails?.lightbox?.bestSuited || "Brand authority, luxury goods, premium real estate",
       localImage: cityInfo?.formats?.lightbox || "/Choose the touchpoint/Tension Fabric Lightboxes.webp",
       fallbackImage: cityInfo?.formats?.lightbox || "/Choose the touchpoint/Tension Fabric Lightboxes.webp",
     },
     {
       id: 2,
       numberStr: "02",
-      tag: "Dynamic Expression · Immersive Impact",
+      tag: cityInfo?.formatDetails?.ledWall?.tagline || "Dynamic Expression · Immersive Impact",
       title: "Digital LED Video Walls",
-      description: "High-definition digital canvases that bring motion, storytelling and scale together across high-traffic terminal environments.",
-      bestSuited: "Product launches, technology, dynamic campaigns",
+      description: cityInfo?.formatDetails?.ledWall?.description || "High-definition digital canvases that bring motion, storytelling and scale across high-traffic terminal environments.",
+      bestSuited: cityInfo?.formatDetails?.ledWall?.bestSuited || "Product launches, technology, dynamic campaigns",
       localImage: cityInfo?.formats?.ledWall || "/Choose the touchpoint/Digital LED Video Walls.webp",
       fallbackImage: cityInfo?.formats?.ledWall || "/Choose the touchpoint/Digital LED Video Walls.webp",
     },
     {
       id: 3,
       numberStr: "03",
-      tag: "Mobile Visibility · Repeated Brand Exposure",
+      tag: cityInfo?.formatDetails?.trolley?.tagline || "Mobile Visibility · Repeated Exposure",
       title: "Luggage Trolley Advertising",
-      description: "Strategically branded trolley panels that travel with passengers, creating continuous visibility throughout key moments of the airport journey.",
-      bestSuited: "Banking, telecom, consumer brands, mass-premium campaigns",
+      description: cityInfo?.formatDetails?.trolley?.description || "Strategically branded trolley panels that travel with passengers, creating continuous visibility throughout key moments of the airport journey.",
+      bestSuited: cityInfo?.formatDetails?.trolley?.bestSuited || "Banking, telecom, consumer brands, mass-premium campaigns",
       localImage: cityInfo?.formats?.trolley || "/Choose the touchpoint/Luggage Trolley Ads.webp",
       fallbackImage: cityInfo?.formats?.trolley || "/Choose the touchpoint/Luggage Trolley Ads.webp",
     },
     {
       id: 4,
       numberStr: "04",
-      tag: "Exclusive Placement · Uninterrupted Attention",
+      tag: cityInfo?.formatDetails?.aerobridge?.tagline || "Exclusive Placement · Focused Attention",
       title: "Aerobridge Branding",
-      description: "Immersive branding across aerobridge pathways, offering brands a distinctive presence within one of the airport’s most exclusive passenger touchpoints.",
-      bestSuited: "FinTech, premium services, luxury and high-value brands",
+      description: cityInfo?.formatDetails?.aerobridge?.description || "Immersive branding across aerobridge pathways, giving brands distinctive presence within one of the airport’s most exclusive passenger touchpoints.",
+      bestSuited: cityInfo?.formatDetails?.aerobridge?.bestSuited || "FinTech, premium services, luxury and high-value brands",
       localImage: cityInfo?.formats?.aerobridge || "/Choose the touchpoint/Aerobridge Branding.webp",
       fallbackImage: cityInfo?.formats?.aerobridge || "/Choose the touchpoint/Aerobridge Branding.webp",
     },
@@ -87,14 +87,18 @@ export default function FormatOverview({
               </span>
             </div>
             <h2 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900 leading-[1.15] font-serif">
-              Choose the touchpoint<br />{cityName ? `in ${cityName}` : "by the objective"}.
+              {cityInfo?.touchpointTitle ? (
+                cityInfo.touchpointTitle
+              ) : (
+                <>Choose the touchpoint<br />{cityName ? `in ${cityName}` : "by the objective"}.</>
+              )}
             </h2>
           </div>
           <div className="lg:col-span-1">
             <p className="text-[14px] sm:text-base text-slate-500 font-medium leading-relaxed font-sans">
-              {cityName
+              {cityInfo?.touchpointDescription || (cityName
                 ? `Each format shows verified dimensions, visibility, strengths, limitations, current airport availability and a genuine execution example in ${cityName}.`
-                : "Each media touchpoint is strategically mapped along passenger traffic routes, boarding gate queues, and luggage dwell zones to maximize premium brand recall."}
+                : "Each media touchpoint is strategically mapped along passenger traffic routes, boarding gate queues, and luggage dwell zones to maximize premium brand recall.")}
             </p>
           </div>
         </div>
